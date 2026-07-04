@@ -34,21 +34,22 @@ with col2:
 if st.button("Predict Accident Severity"):
     st.write("Model feature names:", model.feature_names_in_.tolist())
     input_df = pd.DataFrame({
-        "longitude": [longitude],
-        "latitude": [latitude],
-        "nitrogen_dioxide": [nitrogen_dioxide],
-        "temperature_2m": [temperature_2m],
-        "wind_speed_10m": [wind_speed_10m],
-        "pm10": [pm10],
-        "pm2_5": [pm2_5],
-        "european_aqi": [european_aqi],
-        "number_of_vehicles": [number_of_vehicles],
-        "hour": [hour],
-        "cloud_cover": [cloud_cover],
-        "month": [month],
-        "rain": [rain],
-        "number_of_casualties": [number_of_casualties]
-    })
+    "longitude": [longitude],
+    "latitude": [latitude],
+    "nitrogen_dioxide": [nitrogen_dioxide],
+    "temperature_2m": [temperature_2m],
+    "wind_speed_10m": [wind_speed_10m],
+    "pm10": [pm10],
+    "pm2_5": [pm2_5],
+    "european_aqi": [european_aqi],
+    "number_of_vehicles": [number_of_vehicles],
+    "hour": [hour],
+    "cloud_cover": [cloud_cover],
+    "month": [month],
+    "year": [2015],
+    "rain": [rain],
+    "number_of_casualties": [number_of_casualties]
+})
 
     prediction = model.predict(input_df)[0]
     probability = model.predict_proba(input_df)[0][1]
