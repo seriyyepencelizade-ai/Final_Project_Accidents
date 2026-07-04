@@ -1,4 +1,3 @@
-
 numpy
 pandas
 seaborn
@@ -12,4 +11,3 @@ streamlit
 PyMySQL
 python-dotenv
 joblib
-EOF
