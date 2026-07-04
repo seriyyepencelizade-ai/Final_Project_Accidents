@@ -1,6 +1,6 @@
-pandas
-polars
+
 numpy
+pandas
 seaborn
 matplotlib
 plotly
@@ -11,3 +11,5 @@ scipy
 streamlit
 PyMySQL
 python-dotenv
+joblib
+EOF
