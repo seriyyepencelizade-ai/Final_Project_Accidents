@@ -32,6 +32,7 @@ with col2:
     pm2_5 = st.number_input("Enter PM2.5:", min_value=0.0, value=0.0)
 
 if st.button("Predict Accident Severity"):
+     st.write("Model feature names:", model.feature_names_in_.tolist())
     input_df = pd.DataFrame({
         "longitude": [longitude],
         "latitude": [latitude],
