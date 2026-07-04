@@ -224,3 +224,5 @@ __pycache__/
 data/raw/*.csv
 data/processed/*.csv
 
+echo "data/processed/*.csv" >> .gitignore
+echo "notebooks/data/*.csv" >> .gitignore
